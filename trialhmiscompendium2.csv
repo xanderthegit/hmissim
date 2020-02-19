@@ -1,0 +1,16 @@
+DESCRIPTION,NODE,VARIABLE,REQUIRED,TYPE,CHOICES,PROBS,DISTRIB,DISTRIB.INPUTS,NAS,POSITIVEONLY
+Name,universal,name,No,name,,,,,0,0.111111111
+Social Security Number,universal,ssn,No,ssn,,,,,0,0.1
+Date of Birth*,universal,dob,No,date,,,,,0,0.166666667
+Race,universal,race,No,enum,American Indian or Alaska Native | Asian | Black or African American | Native Hawaiian or Other Pacific Islander | White | Client Doesnt Know | Client Refused | Data Not Collected,.125 | .125 | .125 | .125 | .125 | .125 | .125 | .125,,,0,0.111111111
+Ethnicity,universal,eth,No,enum,Non-Hispanic/Non-Latino | Hispanic/Latino | Client Doesnt Know | Client Refused | Data Not Collected,.2 | .2 | .2 | .2 | .2,,,0,0.2
+Gender,universal,gen,No,enum,Female | Male | Trans Female (MTF or Male to Female) | Trans Male (FTM or Female to Male) | Gender Non-Conforming | Client doesnt know | Client refused | Data not collected,.125 | .125 | .125 | .125 | .125 | .125 | .125 | .125,,,0,0.166666667
+Veteran Status,universal,vet,No,enum,No | Yes | Client Doesnt Know | Client Refused | Data Not Collected,.2 | .2 | .2 | .2 | .2,,,0,0.2
+Disabling Condition,universal,dis,No,enum,No | Yes | Client Doesnt Know | Client Refused | Data Not Collected,.2 | .2 | .2 | .2 | .2,,,0,0.166666667
+Project Start Date*,universal,start,No,date,,,,,0,0.166666667
+Project Exit Date*,universal,end,No,date,,,,,0,0.125
+Destination,universal,dest,No,enum,Homeless Situation | Institutional Situation | Temporary and Permanent Housing situation | Death,.25 | .25 | .25 | .25,,Place not meant for habitation | Emergency shelter | Safe Haven,0,0.142857143
+Relationship to Head of Household*,universal,relhh,No,enum,Self | Head of households child | Head of households spouse or partner | Head of households other relation member (other relation to head of household) | Other: non-relation member,1 | 0 | 0 | 0 | 0,,,0,0.25
+Client Location*,universal,loc,No,enum,MA-500,1,,,0,0.2
+Housing Move-In Date*,universal,movein,No,date,,,,,0,0.111111111
+Prior Living Situation,universal,priorsit,No,enum,Homeless Situation | Institutional Situation | Temporary and Permanent Housing situation,.4 | .3 | .3,,,0,0.125
