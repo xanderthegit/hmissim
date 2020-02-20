@@ -6,8 +6,12 @@ require(simstudy)
 compendium <- read.csv("trialhmiscompendium2.csv", header=T, stringsAsFactors = F)
 numberpersons <- 30
 hmis <- simData(compendium, numberpersons)
-#source("makeFamilies.R")
-#dtIndiv <- makeFamilies(numberpersons, 1)
+source("makeFamilies.R")
+dtIndiv <- makeFamilies(numberpersons, 1)
+
+testdata <- genCorGen(30, nvars = 2, params1 = c(.5, .7), dist = "binary", rho = .8, corstr = "cs", wide = TRUE)
+testdata$result = "unknown"
+testdata$result[testdata$V2==1] = "death"
 
 #df <- data.frame(hmis)
 #df <- data.frame(hmis$race, hmis$eth, hmis$gen, hmis$vet, hmis$dis, hmis$dest)
